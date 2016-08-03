@@ -308,4 +308,8 @@ html, body {
     cursor: pointer;
 }
 
+#home_div {
+    margin-bottom:20px;
+}
+
 /* -- End basic layout section -- */
