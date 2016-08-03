@@ -205,7 +205,14 @@ label
 }
 
 .name {
-    font-size:0.8em;
+    display: none;   
+}
+
+@media screen and (min-width: 500px) {
+    .name {
+        display: block;
+        font-size:0.8em;
+    }
 }
 
 /* This Style Sheet block controls the appearance of the links in the borders */
@@ -231,9 +238,14 @@ html, body {
     text-align: center;
     overflow: hidden;
     background-color: rgba(0, 0, 255, 0.2);
-    float: left;
-     height: 100%;
 } 
+
+@media screen and (min-width: 500px) {
+    #sidebar {
+        float: left;
+        height: 100%;
+    }
+}
 
 #footer {
     width: 128px;
@@ -272,10 +284,16 @@ html, body {
 }
 
 #sidebar img { 
-    border: 0;
-    color:#F5F5DC;
-    margin-top: 5px;
+    display:none;
+}
 
+@media screen and (min-width: 500px) {
+    #sidebar img { 
+        display: block;
+        border: 0;
+        color:#F5F5DC;
+        margin-top: 5px;
+    }
 }
 
 #sidebar hr {
